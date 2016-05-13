@@ -39,6 +39,19 @@
         <div class="container">
             <div class="content">
                 <div class="title">Laravel 5</div>
+                    <form action="" method="POST">
+                          <script
+                            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                            data-key="pk_test_xUTCcGiGFnqo4YCkh6IdOKHt"
+                            data-amount="9000"
+                            data-name="Z1MU"
+                            data-description="Laravel 5"
+                            data-image=""
+                            data-locale="auto"
+                            data-zip-code="true"
+                            data-currency="eur">
+                          </script>
+                    </form>
             </div>
         </div>
     </body>
