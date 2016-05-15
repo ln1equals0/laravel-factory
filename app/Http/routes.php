@@ -1,5 +1,8 @@
 <?php
 
+use App\User;
+use App\Lesson;
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -15,3 +18,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/users', function() {
+    $user = new User();
+    $users = $user->all();
+    return view('home.user', compact('users'));
+});
+
+Route::get('/lessons', function() {
+    $lesson = new Lesson();
+    $lessons = $lesson->all();
+    return view('home.lesson', compact('lessons'));
+});

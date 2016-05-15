@@ -6,8 +6,6 @@ class UsersTableSeeder extends Seeder
 {
     public function run()
     {
-        factory('App\User', 50)->create([
-            'name' => 'John Doe'
-        ]);
+        factory('App\User', 100)->create();
     }
 }
